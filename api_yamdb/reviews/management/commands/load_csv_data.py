@@ -5,16 +5,8 @@ import os
 from django.conf import settings
 from django.core.management import BaseCommand
 from django.db import IntegrityError
-
-from reviews.models import (
-    Category,
-    Comment,
-    Genre,
-    GenreTitle,
-    Review,
-    Title,
-    User
-)
+from reviews.models import (Category, Comment, Genre, GenreTitle, Review,
+                            Title, User)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -48,7 +40,7 @@ def open_csv_file(file_name):
             return list(csv.reader(file))
     except FileNotFoundError:
         logging.error(f'Файл {csv_file} не найден.')
-        return
+        # return
 
 
 def change_foreign_values(data_csv):

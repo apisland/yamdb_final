@@ -1,15 +1,8 @@
+from api.views import (CategoryViewSet, CommentViewSet, GenreViewSet,
+                       ReviewViewSet, TitleViewSet, UserViewSet, create_user,
+                       get_jwt_token)
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
-
-from api.views import (
-    CategoryViewSet,
-    CommentViewSet,
-    GenreViewSet,
-    ReviewViewSet,
-    TitleViewSet,
-    UserViewSet
-)
-from api.views import create_user, get_jwt_token
 
 router = DefaultRouter()
 
