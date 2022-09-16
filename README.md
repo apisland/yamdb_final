@@ -1,4 +1,4 @@
-![yamdb_workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![yamdb_workflow](https://github.com/apisland/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # Проект: Yamdb_final
 Учебный проект спринт 16 Яндекс.Практикум
