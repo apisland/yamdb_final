@@ -10,7 +10,7 @@ services:
       - ./.env
   web:
     image: apisland/api_yamdb:v1.14.09.2022
-    # build: ./api_yamdb/
+    build: ./api_yamdb/
     restart: always
     volumes:
       - static_value:/app/static/
