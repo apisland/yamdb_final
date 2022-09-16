@@ -10,7 +10,7 @@
 git@github.com:apisland/yamdb_final.git
 ```
 ```
-cd api_yamdb/
+cd yamdb_final/
 ```
 - Создать виртуальное окружение:
 ```
@@ -24,7 +24,7 @@ source env/Scripts/activate или . env/bin/activate
 python3 -m pip install --upgrade pip
 ```
 ```
-pip install -r requirements.txt
+pip install -r api_yamdb/requirements.txt
 ```
 
 - Из директории **infra/:**
