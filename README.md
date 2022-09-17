@@ -1,5 +1,7 @@
 ![yamdb_workflow](https://github.com/apisland/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
+- Link: http://178.154.204.254/admin
+
 # Проект: Yamdb_final
 Учебный проект спринт 16 Яндекс.Практикум
 
@@ -130,6 +132,9 @@ POSTGRES_USER=postgres # логин для подключения к базе д
 POSTGRES_PASSWORD=postgres # пароль для подключения к БД (установите свой)
 DB_HOST=db # название сервиса (контейнера)
 DB_PORT=5432 # порт для подключения к БД
+DEBUG=False
+SECRET_KEY=<...>
+ALLOWED_HOSTS=<...>
 ```
 ## Примеры обращения к API сервису:
 - Создание пользователя        http://127.0.0.1:8000/api/v1/auth/signup/
