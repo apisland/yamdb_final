@@ -9,12 +9,11 @@ services:
     env_file:
       - ./.env
   web:
-    image: apisland/api_yamdb:latest
-    # restart: always
+    image: apisland/api_yamdb:v1.14.09.2022
+    restart: always
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
-
     depends_on:
       - db
     env_file:
