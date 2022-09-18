@@ -10,9 +10,6 @@ services:
       - ./.env
   web:
     image: apisland/api_yamdb:v1.14.09.2022
-    command: gunicorn api_yamdb.wsgi:application --bind 0.0.0.0:8000
-    ports:
-      - 8000:8000
     restart: always
     volumes:
       - static_value:/app/static/
