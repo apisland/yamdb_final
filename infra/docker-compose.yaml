@@ -5,15 +5,16 @@ services:
   db:
     image: postgres:13.0-alpine
     volumes:
-      - postgres_data:/var/lib/postgresql/data/
+      - /var/lib/postgresql/data/
     env_file:
       - ./.env
   web:
-    image: apisland/yamdb_final:v2.1.19092022
+    image: apisland/yamdb_final:v1.19.09.2022
     restart: always
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
+
     depends_on:
       - db
     env_file:
@@ -31,6 +32,5 @@ services:
       - web
 
 volumes:
-  postgres_data:
   static_value:
   media_value:

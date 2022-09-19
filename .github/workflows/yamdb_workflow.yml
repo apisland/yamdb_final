@@ -45,8 +45,8 @@ jobs:
           uses: docker/build-push-action@v2 
           with:
             push: true
-            file: ./api_yamdb/Dockerfile
-            tags: apisland/yamdb_final:v2.1.19092022
+            tags: apisland/yamdb_final:v1.19.09.2022
+            context: ./api_yamdb
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub

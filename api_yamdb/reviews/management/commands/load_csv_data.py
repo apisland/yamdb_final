@@ -40,7 +40,7 @@ def open_csv_file(file_name):
             return list(csv.reader(file))
     except FileNotFoundError:
         logging.error(f'Файл {csv_file} не найден.')
-        # return
+        return
 
 
 def change_foreign_values(data_csv):
