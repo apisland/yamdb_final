@@ -1,6 +1,6 @@
 ![yamdb_workflow](https://github.com/apisland/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-- Link: http://178.154.204.254/admin
+- Link: http://84.201.159.88/redoc/
 
 # Проект: Yamdb_final
 Учебный проект спринт 16 Яндекс.Практикум
