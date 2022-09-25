@@ -9,7 +9,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: apisland/yamdb_final:2409
+    image: apisland/yamdb_final:latest
     # build:
     #   context: ../api_yamdb/
     #   dockerfile: Dockerfile
