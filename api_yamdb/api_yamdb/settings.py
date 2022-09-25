@@ -14,7 +14,7 @@ SECRET_KEY = os.getenv(
 
 DEBUG = False
 
-ALLOWED_HOSTS = [os.getenv('ALLOWED_HOSTS')]
+ALLOWED_HOSTS = ['*']
 
 CSV_FILES_DIR = os.path.join(BASE_DIR, 'static/data')
 
